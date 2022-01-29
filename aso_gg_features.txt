@@ -1,0 +1,29 @@
+[h1]Astro's Stellaris Overhaul - Galaxy Generation[/h1]
+This mod is meant to provide you with a galaxy full of wonders - where many systems and other phenomena that are rare in Vanilla are virtually certain to spawn in a galaxy of any size.
+Note: Should be compatible with virtually any mod.
+[h2]Feature Summary[/h2]
+[h3]Vanilla Overwrites[/h3]
+- common/defines/00_defines.txt
+[list]
+[*] Empires may spawn closer to each other.
+[*] Planets will try to have a minimum of 3 blockers instead of 1
+[*] Fewer hyperlane edges will be removed based on length or # edges
+[*] Fallen Empires may spawn anywhere in the galaxy (instead of near the core only)
+[/list]
+- common/governments/civics/00_origins.txt:
+[list]
+[*] All origins except Default can only appear once, and (except for the Federation origins) have the same chance of happening (this is to support mods w/ extra origins)
+[*] All origins (except for the Federation origins) can now spawn as Advanced Start empires.
+[/list]
+- events/various
+[list]
+[*] Caravaneers (and Nomads!) are guaranteed to spawn.
+[*] Central Crystal is guaranteed to spawn.
+[*] AI can now get the Horizon Signal.
+[/list]
+[h3]New Content[/h3]
+- New "ASO" Galaxy size, 1200 stars, allows for more AI empires and more Fallen Empires.
+- Ensures that all unique/special systems spawn.
+- New Planet Modifiers
+- New Planetary Deposits
+- New Celestial Body Random Names

@@ -1,0 +1,795 @@
+namespace = aso_gg_spawn_all_unique_systems
+
+### Hidden Game Start Event
+event = {
+	id = aso_gg_spawn_all_unique_systems.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE hostile_system_initializers
+		if = {
+			# Crystal Entities - Blue
+			limit = { NOT = { any_system = { has_star_flag = blue_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Crystal Entities - Blue VARIATION
+			limit = { NOT = { any_system = { has_star_flag = blue2_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_02" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Crystal Entities - Blue VARIATION
+			limit = { NOT = { any_system = { has_star_flag = green_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_03" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Crystal Entities - Green (Patrol) VARIATION
+			limit = { NOT = { any_system = { has_star_flag = green2_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_04" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Crystal Entities - Red
+			limit = { NOT = { any_system = { has_star_flag = red_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_05" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Crystal Entities - Red VARIATION
+			limit = { NOT = { any_system = { has_star_flag = red2_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_06" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Crystal Entities - Elites & Base
+			limit = { NOT = { any_system = { has_star_flag = crystal_home_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_07" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Cloud Entity
+			limit = { NOT = { any_system = { has_star_flag = void_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_08" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Space Amoeba, Large pack
+			limit = { NOT = { any_system = { has_star_flag = amoeba_1_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_10" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Space Amoeba, Small pack
+			limit = { NOT = { any_system = { has_star_flag = amoeba_2_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_10_small_amoeba_pack" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Space Amoeba ROAMING VARIATION
+			limit = { NOT = { any_system = { has_star_flag = amoeba_3_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_11" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Mining Drones
+			limit = { NOT = { any_system = { has_star_flag = drone_system_1 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_12" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Mining Drones
+			limit = { NOT = { any_system = { has_star_flag = drone_system_2 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_12_mining_drones" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Mining Drone Destroyers
+			limit = { NOT = { any_system = { has_star_flag = drone_destroyer_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_12_drone_destroyer" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Mining Drones ALTERNATE
+			limit = { NOT = { any_system = { has_star_flag = drone_system_3 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_13" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Mining Drone Home
+			limit = { NOT = { any_system = { has_star_flag = drone_home_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_14" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Tiyanki
+			limit = { NOT = { any_system = { has_star_flag = tiyanki_home_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_15" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Tiyanki Spawn System
+			limit = { NOT = { any_system = { has_star_flag = tiyanki_spawn_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_16" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			### Privateer Conglomerate
+			limit = { NOT = { any_system = { has_star_flag = pirate_home_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_18" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Amoeba Home System
+			limit = { NOT = { any_system = { has_star_flag = amoeba_home_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_20" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE prescripted_species_systems
+		if = {
+			### Deneb System - UNE start
+			limit = { NOT = { any_system = { has_star_flag = deneb_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "une_deneb_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE special_system_initializers
+		if = {
+			## Guardians of Zanaam
+			limit = { NOT = { any_system = { has_star_flag = guardians_of_zanaam } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "special_init_06" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			### The Sanctuary
+			limit = { NOT = { any_system = { has_star_flag = sanctuary_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "sanctuary_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Crystal Manufactory version of Basic 4
+			limit = { NOT = { any_system = { has_star_flag = manufactory_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "crystal_manufactory_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			#fumongus
+			limit = { NOT = { any_system = { has_star_flag = fumongus_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "fumongus_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE leviathans_system_initializers
+		if = {
+			# Artists
+			limit = { NOT = { any_system = { has_star_flag = guardians_artists_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_artist_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Curators
+			limit = { NOT = { any_system = { has_star_flag = guardians_curators_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_curator_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Traders
+			limit = { NOT = { any_system = { has_star_flag = guardians_traders_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_trader_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Stellarites
+			limit = { NOT = { any_system = { has_star_flag = guardians_stellarite_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_stellarites" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			### Ether Drake
+			limit = { NOT = { any_system = { has_star_flag = guardians_dragon_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_dragon" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Dimensional Horror
+			limit = { NOT = { any_system = { has_star_flag = guardians_horror_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_horror" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Automated Dreadnought
+			limit = { NOT = { any_system = { has_star_flag = guardians_dreadnought_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_dreadnought" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Hive
+			limit = { NOT = { any_system = { has_star_flag = guardians_hive_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_hive" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			#Technosphere
+			limit = { NOT = { any_system = { has_star_flag = guardians_technosphere_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_technosphere" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			### Enigmatic Fortress
+			limit = { NOT = { any_system = { has_star_flag = guardians_fortress_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_fortress" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Wraith
+			limit = { NOT = { any_system = { has_star_flag = guardians_wraith_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_wraith" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE utopia_system_initializers
+		if = {
+			# Ruined Dyson Sphere
+			limit = { NOT = { any_system = { has_star_flag = ruined_dyson_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "dyson_sphere_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ruined Science Nexus
+			limit = { NOT = { any_system = { has_star_flag = ruined_nexus_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "science_nexus_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ruined Sentry Array
+			limit = { NOT = { any_system = { has_star_flag = ruined_sentry_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "sentry_array_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ruined Ring World
+			limit = { NOT = { any_system = { has_star_flag = ruined_ring_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "ring_world_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE marauder_system_initializers
+		if = {
+			### Home System I ###
+			limit = { NOT = { any_system = { has_star_flag = marauder_capital_1 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "marauder_1_1" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			### Home System II ###
+			limit = { NOT = { any_system = { has_star_flag = marauder_capital_2 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "marauder_2_1" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			### Home System III ###
+			limit = { NOT = { any_system = { has_star_flag = marauder_capital_3 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "marauder_3_1" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE distant_stars_system_initializers
+		if = {
+			####### Star Lifting System ######
+			limit = { NOT = { any_system = { has_star_flag = star_lifting_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "star_lifting_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Big Rip System
+			limit = { NOT = { any_system = { has_star_flag = big_rip_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "big_rip_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Time Loop World System
+			limit = { NOT = { any_system = { has_star_flag = time_loop_world_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "time_loop_world_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Toxic Planet with Toxic Moon
+			limit = { NOT = { any_system = { has_star_flag = toxic_moon_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "toxic_planet_toxic_moon" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Shattered world
+			limit = { NOT = { any_system = { has_star_flag = shattered_world_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "shattered_world_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Asteroid System
+			limit = { NOT = { any_system = { has_star_flag = asteroid_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "asteroid_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Big Mining Drones Fleet
+			limit = { NOT = { any_system = { has_star_flag = drone_system_4 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_mining_drones" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Space Amoeba, Large pack
+			limit = { NOT = { any_system = { has_star_flag = amoeba_4_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_amoeba" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Void Cloud System
+			limit = { NOT = { any_system = { has_star_flag = void3_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "hostile_init_void_cloud" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ice System
+			limit = { NOT = { any_system = { has_star_flag = ice_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "ice_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# High Energy System
+			limit = { NOT = { any_system = { has_star_flag = high_energy_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "high_energy_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			####### HATCHLING/VOIDSPAWN SYSTEM ######
+			limit = { NOT = { any_system = { has_star_flag = guardians_hatchling_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "guardians_init_hatchling" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Primitive Robot Civilization (Rage Virus Chain)
+			limit = { NOT = { any_system = { has_star_flag = primitive_robot_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "primitive_robot_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Superflare Star System
+			limit = { NOT = { any_system = { has_star_flag = superflare_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "superflare_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Vacuum Collapse System
+			limit = { NOT = { any_system = { has_star_flag = collapse_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "collapse_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Old Foes System
+			limit = { NOT = { any_system = { has_star_flag = old_foes_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "old_foes_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Scavenger Bot System
+			limit = { NOT = { any_system = { has_star_flag = scavenger_bot_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "scavenger_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			#Sea of Consciousness System
+			limit = { NOT = { any_system = { has_star_flag = living_planet_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "living_planet_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Elderly Tiyanki System
+			limit = { NOT = { any_system = { has_star_flag = elderly_tiyanki_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "elderly_tiyanki_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Junkheap Ratling Home System
+			limit = { NOT = { any_system = { has_star_flag = ratling_home_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "ratling_1_1" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Simple System: Crystals (Free Feature)
+			limit = { NOT = { any_system = { has_star_flag = crystal_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "distar_crystal_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# The Caretaker System
+			limit = { NOT = { any_system = { has_star_flag = escape_pod_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "distar_pod_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Planeshift System
+			limit = { NOT = { any_system = { has_star_flag = phaseshift_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "distar_phaseshift_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE megacorp_system_initializers
+		if = {
+			# Caravaneers
+			limit = { NOT = { any_system = { has_star_flag = caravaneer_home } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "megacorp_caravaneer_init" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ruined Matter Decompressor
+			limit = { NOT = { any_system = { has_star_flag = ruined_matter_decompressor_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "megacorp_matter_decompressor_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ruined Strategic Coordination Center
+			limit = { NOT = { any_system = { has_star_flag = ruined_strategic_coordination_center_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "megacorp_strategic_coordination_center_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ruined Mega Art Installation
+			limit = { NOT = { any_system = { has_star_flag = ruined_mega_art_installation_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "megacorp_mega_art_installation_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Ruined Interstellar Assembly
+			limit = { NOT = { any_system = { has_star_flag = ruined_interstellar_assembly_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "megacorp_interstellar_assembly_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE ancient_relics_system_initializers
+		if = {
+			# Relic World 1
+			limit = { NOT = { any_system = { has_star_flag = relic_system_1 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "relic_system_1" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Relic World 2
+			limit = { NOT = { any_system = { has_star_flag = relic_system_4 } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "relic_system_4" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			####### The Planetary Mechanocalibrator #######
+			limit = { NOT = { any_system = { has_star_flag = mechanocalibrator_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "mechanocalibrator_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}
+
+event = {
+	id = aso_gg_spawn_all_unique_systems.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		### SPAWN UNIQUE federations_system_initializers
+		if = {
+			#### Mega Shipyard - Randomly spawned
+			limit = { NOT = { any_system = { has_star_flag = ruined_mega_shipyard_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "mega_shipyard_init_01" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			#Shallarian System with a powerful guardian
+			limit = { NOT = { any_system = { has_star_flag = planet_with_too_many_moons_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "planet_with_too_many_moons_system" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+		if = {
+			# Wenkwort System
+			limit = { NOT = { any_system = { has_star_flag = wenkwort_system } } }
+			random_system = {
+				limit = { has_owner = no }
+				spawn_system = { initializer = "wenkwort_initializer" }
+			}
+			add_extra_hyperlane_to_spawned_system_effect = yes
+		}
+	}
+}

@@ -1,0 +1,16 @@
+on_game_start = {
+	events = {
+		aso_spawn_all_unique_systems.1 ### SPAWN UNIQUE hostile_system_initializers
+		aso_spawn_all_unique_systems.2 ### SPAWN UNIQUE prescripted_species_systems
+		aso_spawn_all_unique_systems.3 ### SPAWN UNIQUE special_system_initializers
+		aso_spawn_all_unique_systems.4 ### SPAWN UNIQUE leviathans_system_initializers
+		aso_spawn_all_unique_systems.5 ### SPAWN UNIQUE utopia_system_initializers
+		aso_spawn_all_unique_systems.6 ### SPAWN UNIQUE marauder_system_initializers
+		aso_spawn_all_unique_systems.7 ### SPAWN UNIQUE distant_stars_system_initializers
+		aso_spawn_all_unique_systems.8 ### SPAWN UNIQUE megacorp_system_initializers
+		aso_spawn_all_unique_systems.9 ### SPAWN UNIQUE ancient_relics_system_initializers
+		aso_spawn_all_unique_systems.10 ### SPAWN UNIQUE federations_system_initializers
+		central_aso.1 # force spawn Central Crystal
+		akx.8000 # force spawn Horizon Signal
+	}
+}

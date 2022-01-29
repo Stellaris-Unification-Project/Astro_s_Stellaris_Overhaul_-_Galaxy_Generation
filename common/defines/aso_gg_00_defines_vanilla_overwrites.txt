@@ -1,0 +1,19 @@
+	NGameplay = {
+#		RANDOM_START_DISTANCE = 75		# The minimum distance at which empires will spawn from each other in random start
+		RANDOM_START_DISTANCE = 25		# The minimum distance at which empires will spawn from each other in random start
+
+#		MIN_BLOCKED_DEPOSITS = 1		# Always try to have this many blocker deposits on planets when generating the galaxy
+		MIN_BLOCKED_DEPOSITS = 3		# Always try to have this many blocker deposits on planets when generating the galaxy
+
+#		HYPERLANE_GEN_REMOVE_PERC = 0.15			# Try to remove 40% of the longest edges
+		HYPERLANE_GEN_REMOVE_PERC = 0.10			# Try to remove 40% of the longest edges		
+	
+#		HYPERLANE_GEN_REMOVED_MAX_DIST = 20 		# Don't remove an edge if you have to travel more than 20 stars to reach the same position
+		HYPERLANE_GEN_REMOVED_MAX_DIST = 40 		# Don't remove an edge if you have to travel more than 40 stars to reach the same position
+
+#		HYPERLANE_GEN_REMOVE_TOO_MANY_EDGES = 4	# Remove edges if having 4 or more edges
+		HYPERLANE_GEN_REMOVE_TOO_MANY_EDGES = 5	# Remove edges if having 5 or more edges
+
+#		FALLEN_EMPIRE_OUTER_BOUNDARY  		= 100	# Outer boundary of galaxy that fallen empire generation will try to avoid
+		FALLEN_EMPIRE_OUTER_BOUNDARY  		= 0		# Outer boundary of galaxy that fallen empire generation will try to avoid
+	}

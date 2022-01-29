@@ -1,0 +1,172 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet
+# planet_modifier - applied to planet always
+# station = station class in orbit to gather
+#
+# NORMAL PLANETARY DEPOSITS
+# Expansive Desert: +3 Max Generator Districts
+# Expansive Plateau: +3 Max Generator Districts
+# Geoforming River: +3 Max Generator Districts
+# Great Plain: +3 Max Agricultural Districts
+# Idyllic Bay: +20% Planet Immigration Pull
+# Idyllic Islands: +20% Planet Immigration Pull
+# Meltwater Glacier: +3 Max Agricultural Districts
+# Superstratified Range: +3 Max Mining Districts
+#
+
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 0.5
+@mid_rare = 0.25
+@low_rare = 0.1
+
+
+d_aso_gg_expansive_desert = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_expansive_desert
+	planet_modifier = { district_generator_max = 3 }
+	potential = {
+		OR = {
+			is_planet_class = pc_arid
+			is_planet_class = pc_desert
+			is_planet_class = pc_savannah
+			is_planet_class = pc_tundra
+		}
+	}
+	drop_weight = { weight = @low }
+}
+
+d_aso_gg_expansive_plateau = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_expansive_plateau
+	planet_modifier = { district_generator_max = 3 }
+	potential = {
+		OR = {
+			is_planet_class = pc_arctic
+			is_planet_class = pc_arid
+			is_planet_class = pc_continental
+			is_planet_class = pc_desert
+			is_planet_class = pc_gaia
+			is_planet_class = pc_savannah
+			is_planet_class = pc_tropical
+			is_planet_class = pc_tundra
+		}
+	}
+	drop_weight = { weight = @low }
+}
+
+d_aso_gg_geoforming_river = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_geoforming_river
+	planet_modifier = { district_generator_max = 3 }
+	potential = {
+		OR = {
+			is_planet_class = pc_alpine
+			is_planet_class = pc_continental
+			is_planet_class = pc_gaia
+			is_planet_class = pc_tropical
+			is_planet_class = pc_tundra
+		}
+	}
+	drop_weight = { weight = @low }
+}
+
+d_aso_gg_great_plain = {
+	is_for_colonizable = yes
+	category = deposit_cat_food
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_great_plain
+	planet_modifier = { district_farming_max = 3 }
+	potential = {
+		OR = {
+			is_planet_class = pc_arid
+			is_planet_class = pc_continental
+			is_planet_class = pc_gaia
+			is_planet_class = pc_savannah
+			is_planet_class = pc_tropical
+		}
+	}
+	drop_weight = { weight = @low }
+}
+
+d_aso_gg_idyllic_bay = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_idyllic_bay
+	planet_modifier = { planet_immigration_pull_mult = 0.2 }
+	potential = {
+		OR = {
+			is_planet_class = pc_continental
+			is_planet_class = pc_gaia
+			is_planet_class = pc_ocean
+			is_planet_class = pc_tropical
+		}
+	}
+	drop_weight = { weight = @low_rare }
+}
+
+d_aso_gg_idyllic_islands = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_idyllic_islands
+	planet_modifier = { planet_immigration_pull_mult = 0.2 }
+	potential = {
+		OR = {
+			is_planet_class = pc_continental
+			is_planet_class = pc_gaia
+			is_planet_class = pc_ocean
+			is_planet_class = pc_tropical
+		}
+	}
+	drop_weight = { weight = @low_rare }
+}
+
+d_aso_gg_meltwater_glacier = {
+	is_for_colonizable = yes
+	category = deposit_cat_food
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_meltwater_glacier
+	planet_modifier = { district_farming_max = 3 }
+	potential = {
+		OR = {
+			is_planet_class = pc_alpine
+			is_planet_class = pc_continental
+			is_planet_class = pc_gaia
+			is_planet_class = pc_tundra
+		}
+	}
+	drop_weight = { weight = @low }
+}
+
+d_aso_gg_superstratified_range = {
+	is_for_colonizable = yes
+	category = deposit_cat_minerals
+	use_for_min_max_adjustments = yes
+	icon = d_aso_gg_superstratified_range
+	planet_modifier = { district_mining_max = 3 }
+	potential = {
+		OR = {
+			is_planet_class = pc_alpine
+			is_planet_class = pc_arctic
+			is_planet_class = pc_arid
+			is_planet_class = pc_continental
+			is_planet_class = pc_desert
+			is_planet_class = pc_gaia
+			is_planet_class = pc_tropical
+			is_planet_class = pc_tundra
+		}
+	}
+	drop_weight = { weight = @low }
+}

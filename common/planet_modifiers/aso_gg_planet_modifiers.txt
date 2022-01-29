@@ -1,0 +1,78 @@
+###########################
+# Planet Modifiers
+###########################
+#
+# Extreme Climate Variations: -15% Habitability
+# Mild Climate: +15% Food
+# No Axial Tilt: +10% Food, +10% Immigration Pull
+#
+
+pm_aso_gg_extreme_climate_variations = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_arid"
+		}
+		modifier = {
+			add = 5
+			is_planet_class = "pc_continental"
+		}
+		modifier = {
+			add = 5
+			is_planet_class = "pc_desert"
+		}
+		modifier = {
+			add = 5
+			is_planet_class = "pc_savannah"
+		}
+		modifier = {
+			add = 0		# Gaia Worlds are Paradise Planets, hence no Hazardous Weather conditions.
+			is_planet_class = "pc_gaia"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_nuked"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pm_aso_gg_extreme_climate_variations"
+}
+
+pm_aso_gg_mild_climate = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_continental"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_gaia"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pm_aso_gg_mild_climate"
+}
+
+pm_aso_gg_no_axial_tilt = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_continental"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_gaia"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pm_aso_gg_no_axial_tilt"
+}

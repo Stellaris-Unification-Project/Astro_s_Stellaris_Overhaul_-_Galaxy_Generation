@@ -1,0 +1,41 @@
+﻿l_english:
+
+ ####################################
+ # Planet Modifiers
+ ####################################
+ pm_aso_gg_extreme_climate_variations:0 "Extreme Climate Variations"
+ pm_aso_gg_extreme_climate_variations_desc:0 "This planet's biomes range from searing deserts to frozen plateaus, with not much in between."
+
+ pm_aso_gg_no_axial_tilt:0 "No Axial Tilt"
+ pm_aso_gg_no_axial_tilt_desc:0 "This planet has almost no axial tilt, blessing it with a mild and predictable climate. It boasts spectacular beaches and year-round snow-covered slopes. In addition, because of the stable climate high-quality food is easier to grow."
+ 
+ pm_aso_gg_mild_climate:0 "Mild Climate"
+ pm_aso_gg_mild_climate_desc:0 "The mild climate of this planet is well-suited for growing food." 
+
+ ####################################
+ # Planetary Deposits
+ ####################################
+ d_aso_gg_expansive_desert:0 "Expansive Desert"
+ d_aso_gg_expansive_desert_desc:0 "This continent-spanning desert offers ample opportunity for energy generation."
+
+ d_aso_gg_expansive_plateau:0 "Expansive Plateau"
+ d_aso_gg_expansive_plateau_desc:0 "This high-altitude expansive plateau offers a commanding view of the surrounding country. It also provides a large, flat, high area for solar and wind power generation."
+
+ d_aso_gg_geoforming_river:0 "Geoforming River"
+ d_aso_gg_geoforming_river_desc:0 "This mighty river has carved its way down from forbidding mountain heights down to the sea, providing plenty of opportunities to exploit hydroelectric power."
+
+ d_aso_gg_great_plain:0 "Great Plain"
+ d_aso_gg_great_plain_desc:0 "A massive flat grassland covers a large portion of the largest landmass, perfect for agriculture such as farming and livestock."
+ 
+ d_aso_gg_idyllic_bay:0 "Idyllic Bay"
+ d_aso_gg_idyllic_bay_desc:0 "This picturesque bay is lined by fruit-bearing trees. The turquoise water is calm and the trade winds alluring."
+ 
+ d_aso_gg_idyllic_islands:0 "Idyllic Islands"
+ d_aso_gg_idyllic_islands_desc:0 "This idyllic island chain is a popular vacation destination, especially for escaping the winter."
+
+ d_aso_gg_meltwater_glacier:0 "Meltwater Glacier"
+ d_aso_gg_meltwater_glacier_desc:0 "This massive glacier seasonally sends its meltwater into the most fertile valleys on the planet."
+
+ d_aso_gg_superstratified_range:0 "Superstratified Mountain Range"
+ d_aso_gg_superstratified_range_desc:0 "The minerals that comprise this mountain range are stratified to the point that finding and extracting the exact mineral composition that you want is easy."
+ 

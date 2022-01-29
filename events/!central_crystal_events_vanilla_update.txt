@@ -1,0 +1,16 @@
+##############################
+# Central Crystal Events
+# by Joachim
+##############################
+
+namespace = central_aso
+
+# Start Events
+event = {
+	id = central_aso.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = { set_global_flag = central_crystal_flag }
+}
