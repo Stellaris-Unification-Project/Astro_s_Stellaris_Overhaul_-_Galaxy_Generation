@@ -203,8 +203,6 @@ origin_shattered_ring = {
 				text = civic_tooltip_not_idyllic_bloom
 				value = civic_idyllic_bloom
 				value = civic_hive_idyllic_bloom
-			}
-			NOR = {
 				text = civic_tooltip_not_anglers
 				value = civic_anglers
 				value = civic_corporate_anglers
@@ -256,8 +254,6 @@ origin_void_dwellers = {
 				value = civic_idyllic_bloom
 				value = civic_hive_idyllic_bloom
 				value = civic_agrarian_idyll
-			}
-			NOR = {
 				text = civic_tooltip_not_anglers
 				value = civic_anglers
 				value = civic_corporate_anglers
