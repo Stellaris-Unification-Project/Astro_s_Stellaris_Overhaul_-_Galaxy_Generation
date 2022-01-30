@@ -127,8 +127,8 @@ origin_post_apocalyptic = {
 	possible = {
 		authority = { NOT = { value = auth_machine_intelligence } }
 		civics = {
-			NOT = { value = civic_agrarian_idyll }
 			NOR = {
+				value = civic_agrarian_idyll
 				text = civic_tooltip_not_anglers
 				value = civic_anglers
 				value = civic_corporate_anglers
@@ -198,8 +198,8 @@ origin_shattered_ring = {
 
 	possible = {
 		civics = {
-			NOT = { value = civic_agrarian_idyll }
 			NOR = {
+				value = civic_agrarian_idyll
 				text = civic_tooltip_not_idyllic_bloom
 				value = civic_idyllic_bloom
 				value = civic_hive_idyllic_bloom
@@ -255,8 +255,8 @@ origin_void_dwellers = {
 				text = civic_tooltip_not_idyllic_bloom
 				value = civic_idyllic_bloom
 				value = civic_hive_idyllic_bloom
+				value = civic_agrarian_idyll
 			}
-			NOT = { value = civic_agrarian_idyll }
 			NOR = {
 				text = civic_tooltip_not_anglers
 				value = civic_anglers

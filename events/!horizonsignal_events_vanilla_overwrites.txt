@@ -64,10 +64,7 @@ fleet_event = {
 		set_global_flag = akx.9000.fired
 		solar_system = {
 			set_star_flag = horizonsignal_system
-			random_system_planet = {
-				limit = {
-					is_star = yes
-				}
+			star = {
 				save_global_event_target_as = horizonsignal_black_hole
 			}
 			save_global_event_target_as = horizonsignal_system
@@ -78,10 +75,7 @@ fleet_event = {
 	option = {
 		name = OK
 		from = {
-			random_system_planet = {
-				limit = {
-					is_star = yes
-				}
+			star = {
 				enable_special_project = {
 					name = HORIZON_SIGNAL_PROJECT
 					location = this
